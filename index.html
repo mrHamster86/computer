@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Первый курс по компьютерной сборке</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="header-logo">
+      <img class="header-logo__img" src="images/logo.svg" width="40" height="40" alt="Логотип">
+    </div>
+    <div class="navigation">
+      <ul class="nav-user">
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Главная</a>
+        </li>
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Курсы</a>
+        </li>
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Расписание</a>
+        </li>
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Преподаватели</a>
+        </li>
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Рассылка</a>
+        </li>
+        <li class="nav-user__item">
+          <a class="nav-user__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <button class="navigation-btn btn" type="submit">Зайти в кабинет</button>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="main-title">Первый курс по&nbsp;компьютерной сборке</h1>
+    </div>
+
+    <section class="starting container">
+      <h2 class="visually-hidden">Счетчик времени</h2>
+      <dl class="starting__info">
+        <div class="starting__card">
+          <dt>18</dt>
+          <dd>Дней</dd>
+        </div>
+        <div class="starting__card">
+          <dt>18</dt>
+          <dd>Часов</dd>
+        </div>
+        <div class="starting__card">
+          <dt>18</dt>
+          <dd>Минут</dd>
+        </div>
+        <div class="starting__card">
+          <dt>18</dt>
+          <dd>Секунд</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="order-course">
+      <h2 class="visually-hidden">Заказ курса</h2>
+      <div class="order-course__container container">
+        <button class="order-course__btn btn">Заказать курс</button>
+        <table class="order-course__info">
+          <tr class="order-course__line">
+            <td class="order-course__cell">Учеников всего:</td>
+            <td class="order-course__number">200</td>
+          </tr>
+          <tr class="order-course__line">
+            <td class="order-course__cell">Успешно закончили курс:</td>
+            <td class="order-course__number">190</td>
+          </tr>
+        </table>
+        <div class="range">
+          <table class="range__table">
+            <tr class="range__line">
+              <td class="range__cell">Заработано учениками:</td>
+              <td class="range__number">400 000₽</td>
+            </tr>
+          </table>
+          <div class="range__scale">
+            <div class="range__bar" style="width: 440px;"> 
+              <div class="range__toggle range__toggle_min">
+                <span class="visually-hidden">Минимальное количество</span>
+              </div>
+              <div class="range__toggle range__toggle_max">
+                <span class="visually-hidden">Максимальное количество</span>
+              </div>
+            </div>
+          </div>
+          <div class="range-inputs">
+            <label class="range-inputs__label">
+              <input class="range-inputs__input" type="submit" value="0" name="min-price">
+            </label>
+            <label class="range-inputs__label">
+              <input class="range-inputs__input" type="submit" value="1 000 000₽" name="max-price">
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <h2 class="page-footer__title title">Статьи каждую неделю</h2>
+    <p class="page-footer__text">Больше&nbsp;90% учеников прошли полный курс и&nbsp;смогли собрать свой первый компьютер</p>
+    <form class="sub-form" action="#" method="post">
+      <label class="visually-hidden" for="email">Адрес электронной почты</label>
+      <input class="sub-form__input" id="email" type="email" name="appointmet-email" placeholder="E-mail">
+      <button class="sub-form__btn btn" type="submit">Подписаться</button>
+    </form>
+    <ul class="footer-social">
+      <li class="footer-social__item">
+        <a class="footer-social__btn footer-social__btn_vk" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__btn footer-social__btn_yt" href="#">
+          <span class="visually-hidden">Ютьюб</span>
+        </a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__btn footer-social__btn_fb" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__btn footer-social__btn_inst" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
+    </ul>
+    <h2 class="visually-hidden">Автор</h2>
+    <p class="footer-info">Templates #18. More on Figma.info</p>
+  </footer>
+  
+</body>
+
+</html>
