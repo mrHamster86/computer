@@ -168,6 +168,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 251px;
+  margin: 0;
 }
 
 .order-course__line {
@@ -235,18 +236,18 @@ body {
   padding-bottom: 30px;
 }
 
-.mailing {
+.subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mailing__title {
+.subscribe__title {
   margin: 0 0 30px 0;
   padding: 0;
 }
 
-.mailing__text {
+.subscribe__text {
   margin: 0 0 60px 0;
   padding: 0;
   width: 411px;
@@ -255,13 +256,13 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.mailing__sub-form {
+.subscribe__sub-form {
   position: relative;
   width: 492px;
   margin-bottom: 25px;
 }
 
-.mailing__sub-form__input {
+.subscribe__sub-form__input {
   width: 353px;
   height: 44px;
   box-sizing: border-box;
@@ -276,11 +277,11 @@ body {
   outline: none;
 }
 
-.mailing__sub-form__input::-webkit-input-placeholder {
+.subscribe__sub-form__input::placeholder {
   color: #FFFFFF;
 }
 
-.mailing__sub-form__btn {
+.subscribe__sub-form__btn {
   position: absolute;
   top: 0;
   right: 0;
