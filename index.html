@@ -34,7 +34,7 @@
         </li>
       </ul>
     </div>
-    <button class="navigation-btn btn" type="submit">Зайти в кабинет</button>
+    <button class="navigation-btn btn" type="button">Зайти в кабинет</button>
   </header>
 
   <main class="main">
@@ -67,17 +67,17 @@
     <section class="order-course">
       <h2 class="visually-hidden">Заказ курса</h2>
       <div class="order-course__container container">
-        <button class="order-course__btn btn">Заказать курс</button>
-        <table class="order-course__info">
-          <tr class="order-course__line">
-            <td class="order-course__cell">Учеников всего:</td>
-            <td class="order-course__number">200</td>
-          </tr>
-          <tr class="order-course__line">
-            <td class="order-course__cell">Успешно закончили курс:</td>
-            <td class="order-course__number">190</td>
-          </tr>
-        </table>
+        <button class="order-course__btn btn" type="button">Заказать курс</button>
+        <div class="order-course__info">
+          <dl class="order-course__line">
+            <dt class="order-course__cell">Учеников всего:
+            <dd class="order-course__number">200</dd>
+          </dl>
+          <dl class="order-course__line">
+            <dt class="order-course__cell">Успешно закончили курс:
+            <dd class="order-course__number">190</dd>
+          </dl>
+        </div>
         <div class="range">
           <table class="range__table">
             <tr class="range__line">
@@ -87,36 +87,27 @@
           </table>
           <div class="range__scale">
             <div class="range__bar" style="width: 440px;"> 
-              <div class="range__toggle range__toggle_min">
-                <span class="visually-hidden">Минимальное количество</span>
-              </div>
-              <div class="range__toggle range__toggle_max">
-                <span class="visually-hidden">Максимальное количество</span>
-              </div>
             </div>
           </div>
-          <div class="range-inputs">
-            <label class="range-inputs__label">
-              <input class="range-inputs__input" type="submit" value="0" name="min-price">
-            </label>
-            <label class="range-inputs__label">
-              <input class="range-inputs__input" type="submit" value="1 000 000₽" name="max-price">
-            </label>
+          <div class="range-signature">
+            <span class="range-signature__min">0</span>
+            <span class="range-signature__max">1 000 000₽</span>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer">
-    <h2 class="page-footer__title title">Статьи каждую неделю</h2>
-    <p class="page-footer__text">Больше&nbsp;90% учеников прошли полный курс и&nbsp;смогли собрать свой первый компьютер</p>
-    <form class="sub-form" action="#" method="post">
-      <label class="visually-hidden" for="email">Адрес электронной почты</label>
-      <input class="sub-form__input" id="email" type="email" name="appointmet-email" placeholder="E-mail">
-      <button class="sub-form__btn btn" type="submit">Подписаться</button>
-    </form>
+    <section class="mailing">
+      <h2 class="mailing__title title">Статьи каждую неделю</h2>
+      <p class="mailing__text">Больше&nbsp;90% учеников прошли полный курс и&nbsp;смогли собрать свой первый компьютер</p>
+      <form class="mailing__sub-form" action="#" method="post">
+        <label class="visually-hidden" for="email">Адрес электронной почты</label>
+        <input class="mailing__sub-form__input" id="email" type="email" name="appointmet-email" placeholder="E-mail">
+        <button class="mailing__sub-form__btn btn" type="submit">Подписаться</button>
+      </form>
+    </section>
     <ul class="footer-social">
       <li class="footer-social__item">
         <a class="footer-social__btn footer-social__btn_vk" href="#">
@@ -139,7 +130,6 @@
         </a>
       </li>
     </ul>
-    <h2 class="visually-hidden">Автор</h2>
     <p class="footer-info">Templates #18. More on Figma.info</p>
   </footer>
   
