@@ -385,7 +385,7 @@ body {
 }
 
 .partners {
-  margin-bottom: 200px;
+  margin-bottom: 242px;
 }
 
 .partners__wrapper {
@@ -432,6 +432,104 @@ body {
 
 .partners__item:not(:nth-child(4n)) {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 231px;
+}
+
+.program__title {
+  padding-top: 123px;
+}
+
+.program__wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.program__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 41%;
+  display: block;
+  width: 91px;
+  height: 47px;
+  background-image: url(../images/icon-heading.svg);
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.program__text {
+  width: 411px;
+  margin: 0 0 80px 0;
+  line-height: 26px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.program__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 598px;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.program__list::before {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 3px);
+  content: "";
+  display: block;
+  width: 6px;
+  height: 100%;
+  background-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+
+.program__item {
+  position: relative;
+  width: 228px;
+  margin: 0 auto -2px 0;
+  text-align: end;
+}
+
+.program__item:nth-child(2n) {
+  margin: 0 0 0 auto;
+  text-align: start;
+}
+
+.program__item::before {
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -68px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.program__item:nth-child(2n)::before {
+  left: -68px;
+}
+
+.program__week {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.5;
+}
+
+.program__note {
+  margin: 0;
+  font-size: 18px;
+  line-height: 29px;
 }
 
 .teachers {
