@@ -336,7 +336,7 @@ body {
 
 .advantages {
   text-align: center;
-  margin-bottom: 231px;
+  margin-bottom: 130px;
 }
 
 .advantages__title {
@@ -346,7 +346,7 @@ body {
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 28px;
   padding: 0;
   list-style: none;
@@ -354,9 +354,14 @@ body {
 
 .advantages__item {
   width: 358px;
+  margin: 0 82px 100px 0;
   padding-top: 160px;
   background-repeat: no-repeat;
   background-position: center 0;
+}
+
+.advantages__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .advantages__item_skill {
@@ -533,7 +538,7 @@ body {
 }
 
 .teachers {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .teachers__wrapper {
@@ -571,7 +576,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 416px;
-  margin-right: 23px;
+  margin: 0 23px 100px 0;
 }
 
 .teachers__item:nth-child(3n) {
@@ -596,6 +601,7 @@ body {
 }
 
 .teachers__btn {
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #FFFFFF;
 }
